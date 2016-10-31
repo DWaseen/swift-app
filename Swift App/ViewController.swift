@@ -3,7 +3,7 @@
 //  Swift App
 //
 //  Created by Dan Waseen on 9/21/16.
-//  Copyright © 2016 Dan Waseen. All rights reserved.
+//  Copyright © 2016 Dan Waseen. All rights reserved...
 //
 
 import UIKit
