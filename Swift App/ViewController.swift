@@ -17,12 +17,18 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.red
         TheLabel.text = "Hello There"
     }
+    
+    
     @IBAction func button_tapped(_ sender: AnyObject) {
-        TheLabel.text = "Hello Again"
+
+        print(Text1.text!)
+        print(Text2.text!)
+        TheLabel.text = "Answer is ... \(Double(Text1.text!)!+Double(Text2.text!)!)"
     }
-    @IBAction func button2_tapped(_ sender: AnyObject) {
-        TheLabel.text = "Buttons are Cool"
-    }
+    
+    @IBOutlet weak var Text1: UITextField!
+    
+    @IBOutlet weak var Text2: UITextField!
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

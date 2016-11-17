@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
@@ -37,38 +37,56 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3WL-sh-Ykf">
+                                <frame key="frameInset" minX="163" minY="242" width="25" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hBv-mH-1SQ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="jrH-7m-j4k"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IuX-hp-Djp">
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Ih3-kT-H2T"/>
+                                    <constraint firstAttribute="width" constant="100" id="bQW-Jh-7SV"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJl-xE-MaV">
-                                <frame key="frameInset" minX="151" minY="127" width="60" height="30"/>
+                                <frame key="frameInset" minX="137" minY="76" width="60" height="30"/>
                                 <state key="normal" title="Push Me"/>
                                 <connections>
                                     <action selector="button_tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v4m-H5-0ud"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXK-po-WAk">
-                                <frame key="frameInset" minX="153" minY="175" width="57" height="30"/>
-                                <state key="normal" title="button2"/>
-                                <connections>
-                                    <action selector="button2_tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jet-KY-3EN"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lXK-po-WAk" firstAttribute="top" secondItem="BJl-xE-MaV" secondAttribute="bottom" constant="22" id="92a-rd-6eC"/>
+                            <constraint firstItem="Ogl-Z1-31B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="7cp-dC-Yte"/>
                             <constraint firstItem="BJl-xE-MaV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="98H-jA-P15"/>
-                            <constraint firstItem="Ogl-Z1-31B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="XEa-lJ-yof"/>
+                            <constraint firstItem="hBv-mH-1SQ" firstAttribute="top" secondItem="Ogl-Z1-31B" secondAttribute="bottom" constant="100" id="YKN-Tc-EJq"/>
+                            <constraint firstItem="hBv-mH-1SQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cda-xr-7EH"/>
                             <constraint firstItem="Ogl-Z1-31B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-12.5" id="ecG-Xj-7fC"/>
-                            <constraint firstItem="lXK-po-WAk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qdT-1q-gua"/>
+                            <constraint firstItem="IuX-hp-Djp" firstAttribute="top" secondItem="hBv-mH-1SQ" secondAttribute="bottom" constant="100" id="mL3-dg-gPn"/>
                             <constraint firstItem="BJl-xE-MaV" firstAttribute="top" secondItem="Ogl-Z1-31B" secondAttribute="bottom" constant="36.5" id="ub1-vz-sTf"/>
+                            <constraint firstItem="IuX-hp-Djp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xY2-2P-iAE"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Text1" destination="hBv-mH-1SQ" id="mjz-K4-BYh"/>
+                        <outlet property="Text2" destination="IuX-hp-Djp" id="Xwg-wb-J6d"/>
                         <outlet property="TheLabel" destination="Ogl-Z1-31B" id="2Ka-hw-I4X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-890.39999999999998" y="-297.30134932533736"/>
+            <point key="canvasLocation" x="1225" y="-921"/>
         </scene>
     </scenes>
 </document>
